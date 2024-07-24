@@ -3,9 +3,8 @@
 #include <time.h>
 #include <string.h>
 
-
-#include <stdio.h>
-#include <string.h>
+// DES加密函数声明
+void des_encrypt(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext);
 
 // 密钥排列表
 static const char key_permutation[] = {
@@ -62,13 +61,12 @@ void des_encrypt(unsigned char *plaintext, unsigned char *key, unsigned char *ci
     }
 }
 
-// // DES加密函数声明
-// void des_encrypt(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext);
 
-// DES加密函数(实际需要实现DES算法)
-void des_encrypt(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext) {
-    // 实现DES加密算法
-}
+
+// // DES加密函数(实际需要实现DES算法)
+// void des_encrypt(unsigned char *plaintext, unsigned char *key, unsigned char *ciphertext) {
+//     // 实现DES加密算法
+// }
 
 int main() {
     unsigned char plaintext[8] = {0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22};
